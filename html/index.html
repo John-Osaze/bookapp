@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BookApp | ...first come, first served</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no, minimum-scale=1, maximum-scale=1'>
+    <link rel="stylesheet" href="img/icons/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/roboto-3-cufonfonts-webfont/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-------------------------------------- The Navigation Bar [Beginning]  ------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h3>BookApp</h3>
+                    <!-- <img src="./img/logo.png" alt=""> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2" style="color: white;"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse navGroup" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link navTabs" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navTabs" href="#">Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navTabs" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navTabs" href="#">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navTabs" href="#" tabindex="">Rentals</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navTabs" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Login</a>
+                                <a class="dropdown-item" href="#">Sign Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fa fa-switch-off"></i> Log out</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navTabs" href="#" tabindex=""><i class="fa fa-sun"></i></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 w-50 justify-content-end searchField">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-------------------------------------- The Navigation Bar [Ending]  ------------------------------------->
+
+    <!-------------------------------------- The User Dashboard [Beginning]  ------------------------------------->
+        <section>
+            <div class="container">
+                <input type="checkbox" id="check">
+                <label for="check" class="open"><i class="fa fa-bars"></i></label>
+                <div class="sidebar-wrapper">
+                    <div class="sidebar">
+                        <div class="avatar-wrapper">
+                            <label for="check" class="close"><i class="fas fa-times"></i></label>
+                            <img src="img/priching-img-3.png" alt="profile" class="avatar">
+                            <p class="userName">Mohinder Suresh</p>
+                        </div>
+                        <nav>
+                            <ul class="menu">
+                                <li><a href="#"><i class="fas fa-user"></i>  Account</a></li>
+                                <li><a href="#"><i class="fas fa-cog"></i>  Subscription</a></li>
+                                <li><a href="#"><i class="fas fa-gift"></i>  History</a></li>
+                                <li><a href="#"><i class="fas fa-download"></i>  Payments</a></li>
+                                <li><a href="#"><i class="fas fa-cart-arrow-down"></i>  Promotions</a></li>
+                                <li><a href="#"><i class="fas fa-life-ring"></i>  User Experience</a></li>
+                                <li><a href="#"><i class="fas fa-sign-out-alt"></i>  Sign Out</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-------------------------------------- The User Dashboard [Ending]  ------------------------------------->
+
+    <main>
+        <section class="cardWrapper">
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section class="cardWrapper">
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <section class="cardWrapper">
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <div class="cardFeatures">
+                        <ul class="cardOptions">
+                            <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                            <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                            <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                        </ul>
+                        <div class="cardInfo">
+                            <h4>Dr. Taylor Nancy</h4>
+                            <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="wholeCard">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                        <img src="img/capture.PNG" alt="">
+                    </div>
+                    <ul class="cardOptions">
+                        <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon"></i></a></li>
+                    </ul>
+                    <div class="cardInfo">
+                        <h4>Dr. Taylor Nancy</h4>
+                        <button type="submit" class="cardButton"><a href="#">Book</a></button>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

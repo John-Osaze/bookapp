@@ -1,0 +1,110 @@
+.cardWrapper{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+.wholeCard{
+    /* margin-right: 2rem; */
+}
+
+.cardContainer{
+    box-shadow: 4px 8px 15px 0px rgba(0, 0, 0, 0.425);
+    position: relative;
+    display: inline-block;
+    transition: box-shadow .6s ease-in-out;
+}
+
+.cardContainer:hover{
+    box-shadow: 16px 28px 32px 0px rgba(0, 0, 0, 0.37);;
+}
+
+.cardInfo{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: baseline;
+    align-items: baseline;
+    background-color: #424242b4;
+    width: 23rem;
+}
+
+.cardInfo h4{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.cardInfo button{
+    margin-left: 7.1rem;
+    padding: .2rem .5rem;
+    width: 6rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: var(--dominant);
+    border: none;
+    border-radius: 2rem;
+    transition: background-color 500ms ease;
+}
+
+.cardInfo button a{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 550;
+}
+
+.cardInfo button:hover{
+    background-color: var(--complementary);
+}
+
+.cardOptions{
+    position: absolute;
+    top: 4.1rem;
+    right: 0.15rem;
+}
+
+.cardOptions li {
+    background-color: #424242b4;
+    width: 3rem;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cardOptions li a{
+    top: 0;
+    display: block;
+    padding: 0 .65rem;
+    /* width: 2rem;
+    height: 2rem; */
+    background-color: var(--dominant);
+    line-height: 3.5rem;
+    /* transition: background-color .3s ease; */
+}
+
+.cardOptions li a i{
+    margin-top: .8rem;
+    /* clip-path: circle(); */
+    font-size: 1.5rem;
+    color: white;
+    width: 2rem;
+    height: 2rem; 
+}
+
+.cardOptions li a:hover{
+    background-color: var(--complementary);
+}
+
+.cardOptions, .cardInfo{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in;
+}
+
+.cardContainer:hover .cardOptions, 
+.cardContainer:hover .cardInfo{
+    visibility: visible;
+    opacity: 1;
+}

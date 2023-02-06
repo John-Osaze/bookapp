@@ -1,0 +1,565 @@
+/*===================================== Global Styles [Beginning] ============================================*/
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --dominant: #ffab18;
+    --complementary: #0a278f;
+    --accent: #343a40;
+    --white: #ffffff;
+    --dark: #0c0c0c;
+    --gradientColor: linear-gradient(45deg, var(--complementary), var(--dominant));
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto-Regular'), url('../fonts/roboto-3-cufonfonts-webfont/Roboto-Regular.woff') format('woff');
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;  
+}
+
+body{
+    background-color: var(--dark);
+    font-family: 'Roboto-Regular' cursive;
+    /* overflow-x: hidden; */;
+    color: var(--white) !important;
+}
+
+:focus{
+    outline: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.img-custom{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.container-custom{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+/*===================================== Global Styles [Ending] ============================================*/
+
+/*===================================== Navigation Bar Styles [Beginning] ==========================================*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-brand h3{
+    display: inline-block;
+    margin: 1.5rem 0 0 1rem;
+}
+
+.navbar{
+    padding: 1rem 0;
+    box-shadow: 0px 4px 15px -6px rgba(83, 83, 83, 0.377);
+    background-color: rgba(10, 10, 10, 0.98);
+}
+
+.dropdown-menu{
+    background-color: var(--dark);
+    width: 15rem;
+}
+
+.dropdown-menu a{
+    font-size: 1.35rem !important;
+}
+
+.dropdown-menu a i{
+    margin-right: 1rem;
+}
+
+.dropdown-divider{
+    opacity: .5;
+}
+
+.navGroup ul li a{
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.navGroup ul li a.navTabs{
+    font-size: 1.4rem;
+    margin: 0 .5rem;
+}
+
+.searchField input{
+    font-size: 1.3rem; 
+}
+
+.searchField button {
+    font-size: 1.3rem;
+}
+
+.nav-button{
+    background-color: var(--accent);
+    border-radius: 2rem;
+    border: none;
+    margin: 0 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .8px;
+    padding: .7rem 1.6rem;
+}
+/*===================================== Navigation Bar Styles [Ending] ==========================================*/
+
+/*===================================== User Dashboard Styles [Beginning] ==========================================*/
+.sidebar-wrapper{
+    max-width: 30rem;
+    min-width: 30rem;
+    height: 92.5vh;
+    background-color: var(--dark);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.671);
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    transition: .85s ease;
+    z-index: 10;
+}
+
+.sidebar-wrapper .sidebar {
+    width: 100%;
+}
+
+.sidebar-wrapper .sidebar .avatar-wrapper{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background: url(../img/cover-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar-wrapper .sidebar .avatar-wrapper::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -11;
+}
+
+.sidebar-wrapper .sidebar .avatar-wrapper .avatar{
+    width: 35%;
+    clip-path: circle();
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.671);
+}
+
+.sidebar-wrapper .sidebar nav .menu li{
+    border-bottom: 1px solid #494949;
+}
+
+.sidebar-wrapper .sidebar nav .menu li a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 2rem;
+    transition: .7s ease;
+    font-size: 1.2rem;
+}
+
+.sidebar-wrapper .sidebar nav .menu li a:hover{
+    background: var(--gradientColor)
+} 
+
+.sidebar-wrapper .sidebar nav .menu li a i{
+    margin-right: 1.5rem;
+}
+
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    z-index: 15;
+}
+
+.open{
+    cursor: pointer;
+    position: fixed;
+    top: 1.5rem;
+    left: 3rem;
+    font-size: 2rem;
+    z-index: 1500;
+}
+
+/* label i{
+} */
+
+#check{
+    display: none;
+} 
+
+#check:checked ~ .sidebar-wrapper{
+    left: 0;
+}
+/*===================================== User Dashboard Styles [Ending] ==========================================*/
+
+main{
+    position: relative;
+    top: 5rem;
+    left: 30rem;
+    padding: 2rem;
+    max-width: 77.5%;
+}
+
+/*===================================== Welcome Banner Styles [Beginning] ==========================================*/
+.welcome-banner{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.welcome-banner .img-area img{
+    width: 55rem;
+}
+
+.welcome-banner .message-area{
+    position: absolute;
+    left: 56rem;
+    bottom: 0rem;
+    text-align: left;
+}
+
+.welcome-banner .message-area h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1rem;
+}
+
+.welcome-banner .message-area h1{
+    text-transform: capitalize;
+    font-size: 5rem;
+    margin: .8rem 0;
+}
+
+.welcome-banner .message-area span::before, .welcome-banner .message-area span::after{
+    content: "";
+    width: 10rem;
+    height: .1rem;
+    background: linear-gradient(to left, var(--white), transparent);
+    position: absolute;
+    top: -0.75rem;
+    opacity: .7;
+}
+
+.welcome-banner .message-area span::after{
+    background: linear-gradient(to right, var(--white), transparent);
+}
+
+.welcome-banner .message-area span{
+    font-size: 2rem;
+    display: block;
+    max-width: 20rem;
+    position: relative;
+    margin-top: 2rem;
+}
+/*===================================== Welcome Banner Styles [Ending] ==========================================*/
+
+/*===================================== Booking Services Styles [Beginning] ==========================================*/
+.booking-list{
+    position: relative;
+    margin-top: 10rem;
+}
+
+.booking-list h4.heading, .booking-list small{
+    font-size: 2.25rem;
+}
+
+.booking-list small{
+    font-size: 1.5rem;
+}
+
+.booking-list ul a{
+    display: block;
+    padding: .75rem;
+    /* border: 2px solid #494949; */
+    margin: 1rem 0;
+    border-radius: 3px;
+}
+
+.booking-list ul a:hover{
+    background-color: #6d6d6dab;
+}
+
+.booking-list .media img{
+    width: 10rem;
+}
+
+.booking-list .media .media-body h5{
+    font-size: 1.5rem;
+}
+
+.booking-list .media .media-body p{
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+/*===================================== Booking Services Styles [Ending] ==========================================*/
+
+/*===================================== Sign Up Form Styles [Beginning] ==========================================*/
+.form-wrapper{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/form-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    padding: 2rem;
+}
+
+.whole-form{
+    width: 45rem;
+    border-radius: 5px;
+    background: var(--dark);
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.whole-form .header-area{
+    margin: 2rem 0;
+}
+
+.whole-form .header-area h2{
+    margin: 1rem 0;
+}
+
+.whole-form .button-box{
+    width: 22rem;
+    margin: 3.5rem auto;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.whole-form .button-box #btn-toggler{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 11rem;
+    height: 100%;
+    background: var(--gradientColor);
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.whole-form .switch-btn{
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.whole-form .form-area{
+    padding: 0 2.5rem;
+}
+
+.whole-form .form-area input{
+    background: #ffffffe5;
+    padding: 1.7rem 3.5rem;
+    color: #353535;
+    font-size: 1.2rem;
+}
+
+.whole-form .form-area select{
+    color: #353535;
+    background: #ffffffe5;
+    height: 3.6rem;
+    font-size: 1.2rem;
+}
+
+.whole-form .form-area input::placeholder{
+    color: #353535;
+    font-size: 1.2rem;
+}
+
+.form-group{
+    position: relative;
+    margin-top: 2rem;
+}
+
+.whole-form .form-area label{
+    font-size: 1.35rem;
+}
+
+.input-icon{
+    color: #353535;
+    position: absolute;
+    top: 3.2rem;
+    left: 1rem;
+    font-size: 1.4rem;
+}
+
+.password-toggler{
+    position: absolute;
+    right: 1.6rem;
+    bottom: .8rem;
+    font-size: 1.4rem;
+    color: #353535;
+}
+
+.whole-form .form-group .form-check label{
+    margin: 0 1.5rem;
+}
+
+.whole-form .form-btn{
+    padding: 0 2rem;
+}
+
+.whole-form .form-btn button{
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background: var(--gradientColor);
+    border: none;
+}
+
+.whole-form .other-options .other-options-text{
+    position: relative;
+}
+
+.whole-form .other-options .other-options-text strong{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.whole-form .other-options .other-options-text strong::before, .whole-form .other-options .other-options-text strong::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to left, var(--white), transparent);
+    width: 10rem;
+    height: .2rem;
+    left: 4rem;
+    top: 1rem;
+    opacity: .6;
+}
+
+.whole-form .other-options .other-options-text strong::after{
+    background: linear-gradient(to right, var(--white), transparent);
+    left: 30rem;
+    top: 1rem;
+}
+
+.whole-form .social-options {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.whole-form .social-options a{
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 1.2rem;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding-top: .9rem;
+    background: var(--gradientColor);
+    transition: transform 350ms ease-in-out;
+}
+
+.whole-form .social-options a:hover{
+    transform: translateY(-15%);
+}
+
+.whole-form .social-options a i{
+    font-size: 1.5rem;
+}
+
+#login-form{
+    position: absolute;
+    width: 95.5%;
+    left: 50rem;
+    transition: all .5s;
+}
+
+#signup-form{
+    position: relative;
+    transition: all .5s;
+}
+/*===================================== Sign Up Form Styles [Ending] ==========================================*/
+
+/*===================================== User Account Styles [Beginning] ==========================================*/
+main.user-account{
+    padding-left: 5rem;
+}
+
+.avatar-section .avatar-links img{
+    width: 8.5rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.account-info form{
+    padding-right: 10rem;
+}
+
+.account-info .form-group input, .account-info .form-group select{
+    height: 3.5rem;
+    font-size: 1.15rem;
+    padding: 0 2rem 0 4rem;
+    background: transparent;
+    color: var(--white);
+}
+
+.account-info .form-group select{
+    padding: 0 1rem;
+    color: var(--white);
+}
+
+.account-info .form-group select option{
+    color: var(--dark);
+ }
+
+.account-info .form-group .input-icon{
+    top: 2.6rem;
+    left: 1.5rem;
+    color: var(--white);
+}
+
+/*===================================== User Account Styles [Ending] ==========================================*/
+
+
+
+
+
